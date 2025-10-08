@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ProgressBar?>
+
+
+<?import javafx.scene.layout.HBox?>
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainController">
+    <center>
+        <TabPane fx:id="tabPane">
+        </TabPane>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_LEFT" style="-fx-padding: 5px;">
+            <Label fx:id="statusLabel" maxWidth="Infinity" style="-fx-padding: 5px;" text="Ready" />
+            <ProgressBar fx:id="swissprotProgressBar" prefWidth="168.0" visible="false" />
+        </HBox>
+    </bottom>
+</BorderPane>

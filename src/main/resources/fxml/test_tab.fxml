@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.TestTabController">
+    <VBox alignment="CENTER">
+        <HBox alignment="CENTER">
+            <WebView fx:id="testWebView" prefWidth="1000" prefHeight="600"/>
+        </HBox>
+    </VBox>
+</ScrollPane>
+

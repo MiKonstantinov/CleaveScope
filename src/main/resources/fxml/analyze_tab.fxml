@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="757.0" prefWidth="1092.0" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.AnalyzeTabController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <HBox spacing="10">
+        <VBox spacing="5" HBox.hgrow="ALWAYS">
+            <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="242.0" spacing="10">
+                <Button fx:id="selectXmlButton" onAction="#handleSelectFiles" text="Select XML Files" />
+                <Label text="P:" />
+                <TextField fx:id="beforeSiteField" prefHeight="25.0" prefWidth="31.0" promptText="6">
+                    <tooltip>
+                        <Tooltip graphicTextGap="10.0" text="Number of positions before hydrolysis. Max number: 12">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Tooltip>
+                    </tooltip></TextField>
+                <Label text="P′:" />
+                <TextField fx:id="afterSiteField" prefHeight="25.0" prefWidth="31.0" promptText="5">
+                    <tooltip>
+                        <Tooltip text="Number of positions after hydrolysis. Max number: 12">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Tooltip>
+                    </tooltip></TextField>
+                <CheckBox fx:id="excludeInitialMethionineCheckBox" text="Exclude N-terminal M" />
+                <Button fx:id="processFilesButton" onAction="#handleProcessFiles" text="Process Files" />
+            </HBox>
+        </VBox>
+        <VBox alignment="TOP_RIGHT" spacing="5" HBox.hgrow="ALWAYS">
+            <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="55.0" spacing="10">
+                <Label text="Aligned peptides" />
+                <Button fx:id="copyButton" onAction="#handleCopyToClipboard" text="Copy to clipboard" />
+                <Button fx:id="saveButton" onAction="#handleSaveToFile" text="Save to file" />
+            </HBox>
+        </VBox>
+    </HBox>
+    <HBox spacing="10" VBox.vgrow="ALWAYS">
+        <TextArea fx:id="outputArea" editable="false" wrapText="true" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" />
+        <TextArea fx:id="alignedOutputArea" editable="false" wrapText="true" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+            <font>
+                <Font name="Monospaced Regular" size="12.0" />
+            </font></TextArea>
+    </HBox>
+</VBox>
