@@ -1,6 +1,6 @@
 ## 📥 Installation
 
-1. Download the latest release from the [Releases](https://github.com/YOUR_USERNAME/CleaveScope/releases) page
+1. Download the latest release from the [Releases](https://github.com/MiKonstantinov/CleaveScope/releases) page
 2. Run the program CleaveScope.exe
 
 > ☕ Requires Java 17 or later.
