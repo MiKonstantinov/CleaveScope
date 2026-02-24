@@ -24,7 +24,24 @@
 
 ---
 
+## 📖 Citation
+
+If you use **CleaveScope** in your research, please cite:
+
+> *CleaveScope─An Easy Tool for Protease Specificity Analysis from LC-MS/MS Data*,
+> Mihail Konstantinov and Ilya Toropygin.
+> **Analytical Chemistry** Article ASAP.
+> DOI: 10.1021/acs.analchem.5c06465
+
+---
+
 ## 📝 License
+
+CleaveScope is distributed under the MIT License.
+Copyright (c) 2026 Mihail Konstantinov
+See the [LICENSE](LICENSE.txt) file for details.
+
+---
 
 ## 👨‍💻 Author
 
