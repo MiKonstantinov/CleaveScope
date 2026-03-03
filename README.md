@@ -28,9 +28,9 @@
 
 If you use **CleaveScope** in your research, please cite:
 
-> *CleaveScope─An Easy Tool for Protease Specificity Analysis from LC-MS/MS Data*,
 > Mihail Konstantinov and Ilya Toropygin.
-> **Analytical Chemistry** Article ASAP.
+> CleaveScope ─ An Easy Tool for Protease Specificity Analysis from LC-MS/MS Data.
+> *Analytical Chemistry*. **2026**, 98 (8), 5872-5874.
 > DOI: 10.1021/acs.analchem.5c06465
 
 ---
